@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.lemontimee.hedefprogramdenemev1.viewmodel.LoginRegisterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".view.FragmentRegister">
+
+        <ImageButton
+            android:id="@+id/imageButtonBackRegister"
+            android:layout_width="49dp"
+            android:layout_height="38dp"
+            android:background="#F5F5EC"
+            android:contentDescription="@string/back_button"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/create_account"
+            android:textColor="@color/laci"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.162" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:textColorHint="@color/laci"
+                app:boxStrokeColor="@color/laci"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/icon_username"
+                app:errorUsername="@{viewmodel.usernameErrorMLD}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextRegisterUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_input_background"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/username"
+                    android:text="@={viewmodel.usernameMLD}"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/laci">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:textColorHint="@color/laci"
+                app:boxStrokeColor="@color/laci"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/icon_email"
+                app:errorEmail="@{viewmodel.emailErrorMLD}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_input_background"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/email_adress"
+                    android:text="@={viewmodel.emailMLD}"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/laci">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:textColorHint="@color/laci"
+                app:boxStrokeColor="@color/laci"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/icon_lock"
+                app:errorPassword="@{viewmodel.passwordErrorMLD}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_input_background"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/password"
+                    android:text="@={viewmodel.passwordMLD}"
+                    android:inputType="textPassword"
+                    android:textColor="@color/laci">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:textColorHint="@color/laci"
+                app:boxStrokeColor="@color/laci"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/icon_lock"
+                app:errorPassCon="@{viewmodel.passwordConfirmErrorMLD}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextRegisterConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_input_background"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/confirm_password"
+                    android:text="@={viewmodel.passwordConfirmMLD}"
+                    android:inputType="textPassword"
+                    android:textColor="@color/laci"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <android.widget.Button
+                android:id="@+id/buttonRegisterRegister"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_custom_3"
+                android:fontFamily="@font/regular"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/laci"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

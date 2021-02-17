@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HedefProgramıDenemeV1</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="email_adress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="reset">Reset</string>
+    <string name="or">or</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="back_button">Back Button</string>
+    <string name="welcome">Welcome!</string>
+    <string name="nice_to_see_you">Nice to see you.</string>
+</resources>

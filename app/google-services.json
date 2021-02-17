@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "67658338413",
+    "project_id": "hedefprogramidenemev1",
+    "storage_bucket": "hedefprogramidenemev1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67658338413:android:27cfcddcd587c10e0eef64",
+        "android_client_info": {
+          "package_name": "com.lemontimee.hedefprogramdenemev1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67658338413-3e1avoc2999erg9eic81fskq64jmj802.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemontimee.hedefprogramdenemev1",
+            "certificate_hash": "06b6cb0d15c51478b17812d6cf46b3eeaf819574"
+          }
+        },
+        {
+          "client_id": "67658338413-7d8ulu96oejcmpljp72okr2gpi1maj1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA50_ZUc4ro_gY_nbFdxG4sPlaf1ExxTa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67658338413-7d8ulu96oejcmpljp72okr2gpi1maj1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
